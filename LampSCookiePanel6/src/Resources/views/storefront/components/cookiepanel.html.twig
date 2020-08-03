@@ -1,0 +1,79 @@
+<style>
+    {{ shopware.config.LampSCookiePanel.config.customCss }}
+</style>
+
+<div class="tx-lamp-cookie-consent">
+
+    <div class="lamp-cookie-panel" data-lamp-cookie-panel="1">
+        <div id="cookie-hint-main">
+            <div class="cookie-header">
+                {% if shopware.config.LampSCookiePanel.config.logo %}
+                <img src="{{ shopware.config.LampSCookiePanel.config.logo }}" alt="{$lampConfig.title}" title="">
+                <br>
+                <br>
+                {%  endif %}
+                <h3>{{ shopware.config.LampSCookiePanel.config.title }}</h3>
+            </div>
+            {{ shopware.config.LampSCookiePanel.config.titletext }}
+
+
+            <div class="cookie-panel__selection">
+                <form>
+                    <div class="cookie-panel__checkbox-wrap">
+                        <input class="cookie-panel__checkbox cookie-panel__checkbox--state-inactiv"
+                               autocomplete="off" data-lamp-cookie-panel-grp="1"
+                               id="group-1" type="checkbox"
+                               checked="1"
+                               data-lamp-cookie-panel-essential="1"
+                               disabled="disabled"
+                               value="group-1">
+                        <label for="group-1">{{ shopware.config.LampSCookiePanel.config.grp1 }}</label>
+                    </div>
+                    <div class="cookie-panel__checkbox-wrap">
+                        <input class="cookie-panel__checkbox " autocomplete="off" data-lamp-cookie-panel-grp="2" id="group-2" type="checkbox" value="group-2">
+                        <label for="group-2">{{ shopware.config.LampSCookiePanel.config.grp2 }}</label>
+                    </div>
+                    <div class="cookie-panel__checkbox-wrap">
+                        <input class="cookie-panel__checkbox " autocomplete="off" data-lamp-cookie-panel-grp="3" id="group-3" type="checkbox" value="group-3">
+                        <label for="group-3">{{ shopware.config.LampSCookiePanel.config.grp3 }}</label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="cookie-main">
+                <div class="cookie-panel__description">
+                </div>
+                <div class="cookie-panel__control">
+                    <button data-lamp-cookie-panel-save="all" class="cookie-blue-btn cookie-panel__button cookie-panel__button--color--green">Alle akzeptieren</button>
+                    <br>
+                    <button data-lamp-cookie-panel-save="save" class="cookie-white-btn cookie-panel__button">Speichern</button>
+                </div>
+                <!-- <div class="individuell">
+                     Individuelle Datenschutzeinstellungen
+                 </div>-->
+
+                <div class="cookie-panel__link">
+                    <a href="{{ shopware.config.LampSCookiePanel.config.detailLink }}">Cookie-Details</a> |
+                    <a href="{{ shopware.config.LampSCookiePanel.config.privacyLink }}">Datenschutzerklärung</a>  |
+                    <a href="{{ shopware.config.LampSCookiePanel.config.aboutLink }}">Impressum</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="cookie-details">
+            {include 'frontend/components/details.tpl' }
+        </div>
+
+        <div class="brand">
+            <div class="inner">
+                <img src="/bundles/lampscookiepanel/plugin.png" width="16px" alt="Cookie Panel" title="Cookie Panel">
+                <p>Cookie Panel</p>
+            </div>
+        </div>
+
+        {% include 'storefront/components/cookies.html.twig' %}
+
+
+
+    </div>
+</div>

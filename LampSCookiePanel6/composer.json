@@ -1,0 +1,29 @@
+{
+  "name": "lamps/cookiepanel",
+  "description": "Einfaches Cookiepanel",
+  "version": "v1.0.1",
+  "type": "shopware-platform-plugin",
+  "license": "AGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "(c) LAMP solutions GmbH",
+      "role": "Manufacturer"
+    }
+  ],
+  "require": {
+    "shopware/core": "6.2.*"
+  },
+  "extra": {
+    "shopware-plugin-class": "Lamps\\Cookiepanel\\LampSCookiePanel",
+    "plugin-icon": "Resources/config/plugin.png",
+    "label": {
+      "de-DE": "Einfaches Cookiepanel",
+      "en-GB": "Einfaches Cookiepanel"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Lamps\\Cookiepanel\\": "src/"
+    }
+  }
+}

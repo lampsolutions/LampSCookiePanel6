@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Configuration</title>
+        <input-field>
+            <name>title</name>
+            <label>Titel</label>
+            <label lang="de-DE">Title</label>
+            <defaultValue>DATENSCHUTZEINSTELLUNGEN</defaultValue>
+            <helpText>The Title of the cookiepanel in storefront</helpText>
+        </input-field>
+
+        <input-field type="textarea">
+            <name>titletext</name>
+            <label lang="de-DE">Titeltext</label>
+            <label>Titletext</label>
+            <defaultValue>Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.</defaultValue>
+            <helpText>The Title-text below the title</helpText>
+        </input-field>
+        <input-field type="url">
+            <name>detailLink</name>
+            <label lang="de-DE">Deteil-Link</label>
+            <label>detail link</label>
+            <defaultValue>/cookie-details</defaultValue>
+            <helpText>Cookie Detail link</helpText>
+        </input-field>
+        <input-field type="url">
+            <name>privacyLink</name>
+            <label lang="de-DE">Datenschutzlink</label>
+            <label>Privacy link</label>
+            <defaultValue>/privacy</defaultValue>
+            <helpText>Privacy link</helpText>
+        </input-field>
+        <input-field type="url">
+            <name>aboutLink</name>
+            <label lang="de-DE">Impressumslink</label>
+            <label>About link</label>
+            <defaultValue>/impressum</defaultValue>
+            <helpText>About link</helpText>
+        </input-field>
+        <input-field type="checkbox">
+            <name>showOnPrivacy</name>
+            <label lang="de-DE">
+                Impressum / Datenschutz Cookie Panel anzeigen
+                Wenn aktiviert, wird das Cookie Panel auch auf den Seiten "Impressum", "Datenschutz" und "Cookie Informationen" angezeigt (empfohlen: deaktiviert). </label>
+            <label>If active, Cookie Panel will be shown on linked privacy page and about page.</label>
+            <value>false</value>
+        </input-field>
+        <input-field>
+            <name>grp3</name>
+            <label lang="de-DE">Bezeichnung Gruppe 3</label>
+            <label>Label group 3 </label>
+            <defaultValue>Marketing</defaultValue>
+            <helpText>Label group 3</helpText>
+        </input-field>
+        <input-field>
+            <name>grp1</name>
+            <label lang="de-DE">Bezeichnung Gruppe 1</label>
+            <label>Label group 1 </label>
+            <defaultValue>Essenziell</defaultValue>
+            <helpText>Label group 1</helpText>
+        </input-field>
+        <input-field>
+            <name>grp2</name>
+            <label lang="de-DE">Bezeichnung Gruppe 2</label>
+            <label>Label group 2 </label>
+            <defaultValue>Statistik</defaultValue>
+            <helpText>Label group 2</helpText>
+        </input-field>
+        <input-field>
+            <name>analyticsId</name>
+            <label lang="de-DE">Google Analytics Id</label>
+            <label>Google Analytics Id</label>
+            <helpText>Google Analytics id (UA-XXXXX-Y)</helpText>
+        </input-field>
+        <input-field>
+            <name>tagManagerId</name>
+            <label lang="de-DE">Google Tag Manager Id</label>
+            <label>Google Tag Manage Id</label>
+            <helpText>Google Tag Manage id</helpText>
+        </input-field>
+        <input-field>
+            <name>facebookId</name>
+            <label lang="de-DE">Facebook Pixel Id</label>
+            <label>Facebook Pixel Id</label>
+            <helpText>Google Tag Manage id</helpText>
+        </input-field>
+        <input-field type="textarea">
+            <name>customCss</name>
+            <label lang="de-DE">Eigenes CSS</label>
+            <label>Custum CSS</label>
+            <helpText>For Example .lamp-cookie-panel{ background-color: #000;}</helpText>
+        </input-field>
+        <component name="sw-media-field">
+            <name>logo</name>
+            <label lang="de-DE">Logo</label>
+            <label>Brand</label>
+            <description>The Brand displayed above the cookie bar</description>
+        </component>
+
+    </card>
+</config>
